@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">KotlinTest</string>
+    <string name="call_ws">Call Ws</string>
+    <string name="test_java">Test Java Class</string>
+    <string name="test_kotlin">Test Kotlin Class</string>
+    <string name="test_push_notification">Test Push Notification</string>
+    <string name="default_notification_channel_id">this is id of for testing...</string>
+
+</resources>
