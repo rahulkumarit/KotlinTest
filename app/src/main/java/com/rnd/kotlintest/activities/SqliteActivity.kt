@@ -3,7 +3,7 @@ package com.rnd.kotlintest.activities
 import android.os.Bundle
 import android.widget.Toast
 import com.rnd.kotlintest.R
-import kotlinx.android.synthetic.main.activity_sqlite.*
+    import kotlinx.android.synthetic.main.activity_sqlite.*
 
 /**
  * Created by Devrepublic-14 on 12/19/2017.
