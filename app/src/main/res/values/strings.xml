@@ -7,5 +7,7 @@
     <string name="test_push_notification">Test Push Notification</string>
     <string name="default_notification_channel_id">this is id of for testing...</string>
     <string name="name">Name</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_discription">Enter Discription</string>
 
 </resources>
