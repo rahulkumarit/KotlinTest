@@ -49,15 +49,13 @@ class NoteDbManager() {
 
         // Updating single contact
         fun updateNote(note: Note): Int {
-
             val db = this.writableDatabase
             val values = ContentValues()
             values.put(colTitle, note.title)
             values.put(colContent, note.discription)
             // updating row
-             return db.update(dbTable, values, colId + " = ?",
-                     arrayOf(note.id.toString()))
-          }
+            return db.update(dbTable, values, colId + "=" + note.id, null)
+        }
 
         fun getAllNotes(): List<Note> {
             val contactList = ArrayList<Note>()

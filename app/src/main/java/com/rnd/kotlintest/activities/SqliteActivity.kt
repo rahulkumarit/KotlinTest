@@ -47,8 +47,10 @@ class SqliteActivity : BaseActivity(), ItemClickListeners {
 
     private fun editRecords() {
         var database = NoteDbManager().DatabaseHelper(this)
-        val number = database.updateNote(database.getAllNotes().get(position))
-        Toast.makeText(this, "id :" + number, Toast.LENGTH_SHORT).show()
+        var note = database.getAllNotes().get(position)
+        note.title = edtTitle.text.toString()
+        note.discription = edtDis.text.toString()
+        val number = database.updateNote(note)
         addUpdateList(database);
         edtTitle.text.clear()
         edtDis.text.clear()

@@ -21,6 +21,7 @@ class ServiceVolley : ServiceInterface {
     val basePath = "https://api.androidhive.info/volley/person_object.json"
     val basePostPath = "http://mymedicalportfolio.in/WS/doctor_sign_up"
 
+
     override fun getStringResult(path: String, params: String, completionHandler: (response: String?) -> Unit) {
         val jsonStringReq = StringRequest(path,
                 Response.Listener<String> { response ->
@@ -34,7 +35,8 @@ class ServiceVolley : ServiceInterface {
 
 
     override fun get(path: String, params: JSONObject, completionHandler: (response: JSONObject?) -> Unit) {
-        val jsonObjReq = object : JsonObjectRequest(Method.GET, basePath + path, params,
+
+          val jsonObjReq = object : JsonObjectRequest(Method.GET, basePostPath + path, params,
                 Response.Listener<JSONObject> { response ->
                     Log.d(TAG, "/post request OK! Response: $response")
                     completionHandler(response)
