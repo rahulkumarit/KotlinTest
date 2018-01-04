@@ -6,4 +6,5 @@
     <dimen name="card_cover_height">100dp</dimen>
     <dimen name="card_title_padding">5dp</dimen>
     <dimen name="card_price_padding_bottom">10dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
 </resources>

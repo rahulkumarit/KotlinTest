@@ -20,7 +20,7 @@ import javax.xml.parsers.ParserConfigurationException
 class Util {
     companion object {
         val WS_URL = "https://api.androidhive.info/volley/person_object.json";
-        val URL_FOR_XML = "https://api.androidhive.info/pizza/?format=xml";
+            val URL_FOR_XML = "https://api.androidhive.info/pizza/?format=xml";
 
         val KEY_ID = "id";
         val KEY_NAME = "name";
